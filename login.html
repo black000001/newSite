@@ -8,6 +8,88 @@
   <link rel="stylesheet" type="text/css" href="./static/login.css">
   <script src="./static/login.js"></script>
   <link rel="icon" href="./Images/favicon.ico" type="image/x-icon">     
+
+<!--Digital Data data layer -->
+<script type="text/javascript">
+window.digitalData = {
+  "page": {
+    "pageInfo": {
+      "breadcrumbs": "test",
+      "pageShortName": "signup page",
+      "pageName": "signup page",
+      "destinationURL": "https://black000001.github.io/newSite/login.html",
+      "isIframe": false,
+      "contentIframe": false,
+      "hierarchie1": "",
+      "title": "SignUp Page",
+      "internalPageName": "signup",
+      "pageID": "WAD:signup page",
+      "tagging": "",
+      "server": "github.io",
+      "urlShortcut": ""
+    },
+    "category": {
+      "type": "",
+      "version": ""
+    },
+    "attributes": {},
+    "components": []
+  },
+  "product": [
+    {
+      "productInfo": {}
+    }
+  ],
+  "cart": {
+    "productsInCart": 0
+  },
+  "user": [
+    {
+      "profile": [
+        {
+          "profileInfo": {},
+          "attributes": {
+            "loggedIn": false
+          }
+        }
+      ]
+    }
+  ],
+  "pageInstanceID": "s7connect:publish:content:luma:us:en:community:signin",
+  "language": "en"
+};
+window.digitalData.page.pageInfo.referringURL = document.referrer;
+window.digitalData.page.pageInfo.sysEnv = navigator.userAgent;
+
+<script>
+        function generateRandomUserId() {
+            // Generate a random user ID (you can customize this logic based on your requirements)
+            var randomUserId = "User" + Math.floor(Math.random() * 1000000);
+            return randomUserId;
+        }
+
+        function validateLogin() {
+            // Get the values from the input fields
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Check if the username and password are correct (You should implement your authentication logic here)
+            if (username === "test123" && password === "test123") {
+                // Generate a random user ID
+                var randomUserId = generateRandomUserId();
+
+                // Display the random user ID (You can customize this part based on your needs)
+                alert("Login successful! Your User ID is: " + randomUserId);
+
+                // Redirect to the new page
+                window.location.href = "newPage.html";
+            } else {
+                // Display an error message (You can customize this part based on your needs)
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script>
+
   </head>    
 <body>
   <div class="login_form">
